@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!-- Title  -->
+    <title>Skully Inc - By KodakLDN</title>
+    <meta name="description" content="Skully Inc - By KodakLDN" />
+    <meta name="keywords" content="NFT, Ethereum, Art Project" />
+    <meta name="author" content="humans.txt">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <!-- Fonts -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.min.css">
+    <link rel="stylesheet" href="css/site.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+
+<body class="bg-black muli">
+    <div id="page">
+        <nav style="background-color: #0000 !important;"
+        class="w-100pc fixed flex flex-column md-flex-row md-px-10 py-5 bg-black">
+            <div class="flex justify-between">
+                <a href="#" class="flex items-center p-2 mr-4 no-underline">
+                    <img class="max-h-l5 max-w-auto" src="images/logo.png" style="size: 40px" />
+                </a>
+                <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+                    class="flex items-center ml-auto md-hidden yellow-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+                    <i data-feather="menu"></i>
+                </a>
+            </div>
+            <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+                <a href="https://twitter.com/SkullyInc" target="_blank" class="fs-s1 mx-3 py-3 yellow-lighter no-underline hover-gray-lighter"><span>Twitter</a>
+                <a href="https://opensea.io/collection/skullyinc" target="_blank" class="fs-s1 mx-3 py-3 yellow-lighter no-underline hover-gray-lighter">OpenSea</a>
+                <!-- <a href="#pricing" class="fs-s1 mx-3 py-3 white no-underline hover-underline">LooksRare</a> -->
+            </div>
+        </nav>
+       
+        <!-- hero section -->
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+        <div class="relative z--1 center w-100pc  pt-l5 h-100vh bg-cover bg-b" 
+            style="background-image: url(images/Collage.jpg);">
+            <div class="modal__overlay z--1"></div>
+
+            <div class="flex flex-wrap justify-center absolute-center text-center">
+                <p class="w-50pc yellow-lighter fw-600 fs-s1 mb-5 z-3">Presale Mint Goes Live:</p>
+                <h4 id="demo" class="w-100pc yellow-lighter fw-800 fs-l3 mb-5 z-2"></h4>
+            
+            </div>
+            </div>
+    </section>
+    <section>
+        <div class="flex items-center bg-yellow-lighter items-center justify-center">
+            <marquee class="li" direction=”right” onmouseover="running()" onmouseout="running()">
+            <h1 class="self-center black fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">SKULLY INC &copy; by KODAK LDN. LIVE BY SKULLY. DIE BY SKULLY.</h1>
+            </marquee>
+        </div>
+    </section>
+
+    <!-- Website JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"></script>
+    <script src="https://unpkg.com/f0js@0.0.12/dist/f0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bigpicture/2.6.1/BigPicture.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 30, 2022 12:00:00 EST").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("date").innerHTML = "REFRESH PAGE";
+          }
+        }, 1000);
+        </script>
+</body>
+
+</html>
