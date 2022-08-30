@@ -2,4 +2,3 @@ User-agent: Twitterbot
 Disallow: *
 
 Allow: /images
-Allow: /archives
