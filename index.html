@@ -434,10 +434,10 @@
                       console.log(e);
 
                       if (e.code == 4001) {
-                          alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>It looks like you rejected the transaction signature. Please try again.</p>';
+                          alertContent.innerHTML = '<h3 class="pop-alert__title text-center">Error!</h3><p class="text-center">It looks like you rejected the transaction signature. Please try again.</p>';
                           popError();
                       } else {
-                          alertContent.innerHTML = '<h3 class="pop-alert__title">Minting Error!</h3><p>It looks like there was an error trying to mint your NFT.</p> <p>Kindly ensure that your wallet has sufficient balance to cover the mint fees + gas fees.</p> <p>If you have already minted your allowed limit, you cannot mint any more.</p><p> Otherwise, please refresh the page and try again.</p>';
+                          alertContent.innerHTML = '<h3 class="pop-alert__title text-center">Minting Error!</h3><p class="text-center">It looks like there was an error trying to mint your NFT.</p> <p>Kindly ensure that your wallet has sufficient balance to cover the mint fees + gas fees.</p> <p>If you have already minted your allowed limit, you cannot mint any more.</p><p> Otherwise, please refresh the page and try again.</p>';
                           popError();
                       }
                       document.querySelector('.loader').classList.remove('is-loading');
