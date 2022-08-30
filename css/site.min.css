@@ -1,4 +1,10 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@media (max-width: 600px) {
+    #marq {
+        visibility: none;
+    }
+}
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%
@@ -205,8 +211,7 @@ h1 {
     color: #e44c3c;
     font-family: Oswald, sans-serif;
     margin-top: 0;
-    margin-bottom: 2rem;
-    text-transform: uppercase
+    margin-bottom: 2rem
 }
 
 p {
@@ -218,12 +223,12 @@ p {
 
 .sm-icon{
 
-    fill: #e44c3c;
+    fill: #FEF0BC;
 }
 
 .sm-icon:hover{
     
-    fill: #000000;
+    fill: #b3a984;
 }
 
 .red-strong{
@@ -918,7 +923,6 @@ h4 {
     margin-bottom: 0;
     font-weight: 700;
     font-family: Oswald, sans-serif;
-    text-transform: uppercase;
     font-size: 1rem;
     line-height: 1;
     color: rgb(0, 0, 0);
